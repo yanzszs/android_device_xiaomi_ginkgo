@@ -28,6 +28,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 DERP_BUILDTYPE := Official
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+USE_LEGACY_BOOTANIMATION := true
 
 # Device identifier
 PRODUCT_NAME := derp_ginkgo
