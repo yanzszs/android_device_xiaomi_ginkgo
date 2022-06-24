@@ -31,9 +31,6 @@ persist.lcd.hbm_mode=0
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
-# Disable remote keyguard animation
-persist.wm.enable_remote_keyguard_animation=0
-
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
