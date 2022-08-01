@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ginkgo.mk
+    $(LOCAL_DIR)/banana_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_ginkgo-user \
-    derp_ginkgo-userdebug \
-    derp_ginkgo-eng
+    banana_ginkgo-user \
+    banana_ginkgo-userdebug \
+    banana_ginkgo-eng

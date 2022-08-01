@@ -23,16 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common DerpFest stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-DERP_BUILDTYPE := Official
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
+BANANA_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-USE_LEGACY_BOOTANIMATION := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
 
 # Device identifier
-PRODUCT_NAME := derp_ginkgo
+PRODUCT_NAME := banana_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
