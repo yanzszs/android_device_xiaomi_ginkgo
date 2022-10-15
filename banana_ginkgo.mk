@@ -28,7 +28,7 @@ $(call inherit-product, vendor/banana/config/common.mk)
 BANANA_MAINTAINER := yanzszs
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := true
+WITH_GAPPS := false
 
 # Device identifier
 PRODUCT_NAME := banana_ginkgo
