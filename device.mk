@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hidl.memory.block@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
+    ApertureCam \
     libwatermark_shim
 
 PRODUCT_COPY_FILES += \
