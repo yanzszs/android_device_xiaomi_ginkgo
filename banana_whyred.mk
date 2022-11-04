@@ -23,24 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+BANANA_MAINTAINER := zacky
+BANANA_BUILD_TYPE := OFFICIAL
+BANANA_EDITION := GApps
+
+IS_PHONE := true
+WITH_MINI_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_ginkgo
+PRODUCT_NAME := banana_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-RICE_MAINTAINER := zacky
-RICE_CHIPSET := trinket
-SUSHI_BOOTANIMATION := 720
-
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GMS := true
-TARGET_ENABLE_BLUR := false
-TARGET_OPTOUT_GOOGLE_TELEPHONY := false
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
